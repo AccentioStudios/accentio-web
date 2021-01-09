@@ -1,6 +1,6 @@
 {
   "name": "accentio-web",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "Elevando el nivel y la experiencia de la web",
   "main": "index.js",
   "scripts": {
