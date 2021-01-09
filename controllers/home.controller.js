@@ -8,7 +8,7 @@ module.exports = function () {
         index(req, res){
             try{
                 return res.render('pages/index', {
-                    test:"Hello world! v2 git flow"
+                    test:"Hello world! hotfix"
                 });
             }catch(onError){
                 developmentMode ? console.log(`Error ${path.basename(__filename)}.index`, onError):
