@@ -1,7 +1,8 @@
+const path = require('path');
 
 module.exports = function () {
     const express = require('express');
-    const HelloWorldController = require('../../../controllers/helloWorld.api.controller')();
+    const HelloWorldController = require(path.resolve(__dirname, '../../../app/controllers/helloWorld.api.controller'))();
     const v1HelloWorldController = express.Router();
 
     // HelloWorld

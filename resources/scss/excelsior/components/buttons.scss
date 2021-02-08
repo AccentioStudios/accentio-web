@@ -1,0 +1,24 @@
+&-hero-button-xl, &-hero-button-md, &-hero-button-sm {
+    outline: none;
+    position: relative;
+    display: block;
+    background-color: $cyan;
+    color: #fff;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    font-weight: 700;
+    cursor: pointer;
+    &:hover {
+        background-color: lighten($color: $cyan, $amount: 10%);
+        border: 1px solid lighten($color: $cyan, $amount: 27%);
+    }
+    &:active {
+        background-color: darken($color: $cyan, $amount: 10%);
+        border: 1px solid $cyan;
+    }
+}
+
+&-hero-button-xl {
+  padding: 14px 20px;
+  font-size: 14px;
+}

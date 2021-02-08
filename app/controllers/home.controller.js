@@ -2,7 +2,6 @@
 var path = require('path');
 
 module.exports = function () {
-    var RestResponse = require('../models/RestResponse.model');
     var developmentMode = process.env.NODE_ENV == 'production' ? false : true;
     class HomeController {
         index(req, res){

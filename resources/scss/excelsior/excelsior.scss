@@ -1,0 +1,28 @@
+// Variables
+@import './_variables.scss';
+
+// Grid System by Fluidable
+@import './libs/fluidable.scss';
+
+body {
+    background-color: $darkBlue;
+    font-family: $fontFamily;
+    color: $white;
+}
+a {
+    color: $white;
+}
+
+.excelsior {
+    &-wrapper {
+        width: 100vw;
+        min-height: 100vh;
+        padding: 0px;
+        margin: 0px;
+        position: relative;
+    }
+    // Components
+    @import './components/header.scss';
+    @import './components/buttons.scss';
+}
+
