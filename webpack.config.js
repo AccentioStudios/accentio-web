@@ -56,7 +56,7 @@ module.exports = {
             //     }
             // },
             // Resolve URLs
-            "resolve-url-loader",
+            // "resolve-url-loader",
             // Compiles Sass to CSS
             {
                 loader: 'sass-loader',

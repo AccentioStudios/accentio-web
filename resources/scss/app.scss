@@ -1,2 +1,22 @@
 @import './excelsior/excelsior.scss';
 
+.hero-image {
+  width: 701px;
+  position: absolute;
+  right: 0px;
+  transform: translate(0px, -84px);
+}
+
+.unselectable {
+  user-select: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+}
+.height-inherit {
+  height: inherit;
+  position: relative;
+  display: flex;
+  align-items: center;
+}

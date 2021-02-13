@@ -15,7 +15,8 @@ a {
 
 .excelsior {
     &-wrapper {
-        width: 100vw;
+        width: 100%;
+        overflow-x: hidden;
         min-height: 100vh;
         padding: 0px;
         margin: 0px;
@@ -24,5 +25,7 @@ a {
     // Components
     @import './components/header.scss';
     @import './components/buttons.scss';
+    @import './components/hero.scss';
+    @import './components/menus.scss';
 }
 
