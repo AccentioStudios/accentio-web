@@ -11,7 +11,7 @@ module.exports = {
   ],
   output: {
     path: path.resolve(__dirname, './public/bundle'),
-    publicPath: '/',
+    publicPath: path.resolve(__dirname, '/public'),
     filename: '[name].bundle.js',
   },
   plugins: [
@@ -26,8 +26,9 @@ module.exports = {
         test: /\.(png|jpe?g|gif)$/i,
         loader: 'file-loader',
         options: {
-          name: '[path][name].[ext]',
-          outputPath: 'images',
+          publicPath: 'img',
+          outputPath: 'img',
+          name: '[name].[ext]',
         },
       },
       {
@@ -56,7 +57,7 @@ module.exports = {
             //     }
             // },
             // Resolve URLs
-            // "resolve-url-loader",
+            "resolve-url-loader",
             // Compiles Sass to CSS
             {
                 loader: 'sass-loader',

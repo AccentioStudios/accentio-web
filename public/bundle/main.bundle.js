@@ -18,7 +18,7 @@ eval("var _ = __webpack_require__(/*! lodash */ 486);\n\nvar axios = __webpack_r
 
 /***/ }),
 
-/***/ 594:
+/***/ 59:
 /*!*********************************!*\
   !*** ./resources/scss/app.scss ***!
   \*********************************/
@@ -30,4 +30,4 @@ eval("__webpack_require__.r(__webpack_exports__);\n// extracted by mini-css-extr
 /***/ })
 
 },
-0,[[186,"runtime","vendors"],[594,"runtime","vendors"]]]);
+0,[[186,"runtime","vendors"],[59,"runtime","vendors"]]]);

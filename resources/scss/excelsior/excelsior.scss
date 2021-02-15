@@ -5,13 +5,37 @@
 @import './libs/fluidable.scss';
 
 body {
-    background-color: $darkBlue;
+    font-size: $font-size;
     font-family: $fontFamily;
-    color: $white;
+    color: $font-color;
+    background-color: $background-color;
 }
 a {
-    color: $white;
+    color: $font-color;
 }
+
+h1 {
+    @include h1;
+    font-family: $fontSpace;
+}
+h2 {
+    @include h2;
+    font-family: $fontSpace;
+}
+h3 {
+    @include h3;
+    font-family: $fontSpace;
+}
+h4 {
+    @include h4;
+    font-family: $fontSpace;
+}
+
+p {
+    line-height: 2.2em;
+}
+
+
 
 .excelsior {
     &-wrapper {
@@ -22,10 +46,16 @@ a {
         margin: 0px;
         position: relative;
     }
+    &-divisor-line {
+        height: 2px;
+        background-color: $primary-color;
+        min-width: 40px;
+    }
     // Components
     @import './components/header.scss';
     @import './components/buttons.scss';
     @import './components/hero.scss';
     @import './components/menus.scss';
+    @import './components/card.scss';
 }
 

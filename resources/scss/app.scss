@@ -20,3 +20,59 @@
   display: flex;
   align-items: center;
 }
+
+.arrow-down {
+  background-image: url('../img/arrow-bottom.png');
+  background-repeat: no-repeat;
+  background-position: 0px 23px;
+  width: 34px;
+  height: 60px;
+  position: absolute;
+  bottom: 12%;
+  align-self: flex-start;
+}
+
+#card-cod-moon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  & .img-header{
+    width: 129px;
+    text-align: center;
+    align-self: center;
+    margin-bottom: 21px;
+  }
+  & .action-btn {
+    margin-top: 10px;
+    min-width: 150px;
+    align-self: center;
+  }
+  h3 {
+    font-size: $font-size;
+    font-weight: 500;
+    margin: 5px;
+  }
+  h1 {
+    font-size: 21px;
+    margin: 10px;
+    font-family: $fontSpace;
+  }
+  .excelsior-divisor-line{
+    width: 115px;
+    align-self: center;
+    margin-bottom: 11px;
+    margin-top: 7px;
+  }
+}
+
+.prod1{
+  margin-top: 45px;
+}
+.codname-moon-info{
+  margin-left: 40px;
+  margin-top: 40px;
+  .excelsior-divisor-line {
+    max-width: 100px;
+  }
+}
