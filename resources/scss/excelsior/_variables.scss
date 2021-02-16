@@ -14,11 +14,12 @@ $black: #000;
 
 // Text sizes fibonacci
 $font-size: 15.27px;
+$font-size-xxl: calc(4.23 * #{$font-size});
 $font-size-xl: calc(2.617 * #{$font-size});
 $font-size-lg: calc(1.618 * #{$font-size});
-$font-size-sm: calc(9.43 * #{$font-size});
-$font-size-xs: calc(5.83 * #{$font-size});
-$font-size-xxs: calc(3.604 * #{$font-size});
+$font-size-sm: calc(#{$font-size} / 1.618);
+$font-size-xs: calc(#{$font-size} / 2.617);
+$font-size-xxs: calc(#{$font-size} / 4.23);
 
 @mixin h1() {
     font-size: $font-size-xl;

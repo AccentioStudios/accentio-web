@@ -16,18 +16,18 @@ a {
 
 h1 {
     @include h1;
-    font-family: $fontSpace;
 }
 h2 {
     @include h2;
-    font-family: $fontSpace;
 }
 h3 {
     @include h3;
-    font-family: $fontSpace;
 }
 h4 {
     @include h4;
+}
+h1, h2, h3, h4 {
+    color: $font-color;
     font-family: $fontSpace;
 }
 
@@ -35,7 +35,50 @@ p {
     line-height: 2.2em;
 }
 
+.text-xxl{
+    font-size: $font-size-xxl;
+}
+.text-xl{
+    font-size: $font-size-xl;
+}
+.text-lg{
+    font-size: $font-size-lg;
+}
+.text-md{
+    font-size: $font-size;
+}
+.text-sm{
+    font-size: $font-size-sm;
+}
+.text-xs{
+    font-size: $font-size-xs;
+}
+.text-xxs{
+    font-size: $font-size-xxs;
+}
 
+.text-strong, .text-700 {
+    font-weight: 700;
+}
+
+.font-primary {
+    font-family: $fontFamily!important;
+}
+.font-secondary {
+    font-family: $fontSpace!important;
+}
+
+.flex-row-center, .flex-col-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flex-row-center {
+    flex-direction: row;
+}
+.flex-col-center {
+    flex-direction: column;
+}
 
 .excelsior {
     &-wrapper {
@@ -57,5 +100,6 @@ p {
     @import './components/hero.scss';
     @import './components/menus.scss';
     @import './components/card.scss';
+    @import './components/lists.scss';
 }
 

@@ -4,13 +4,14 @@
   "description": "Elevando el nivel y la experiencia de la web",
   "main": "index.js",
   "scripts": {
-    "start": "cross-env NODE_ENV=production node ./index.js",
+    "start": "node ./index.js",
+    "start:prod": "cross-env NODE_ENV=production npm start",
     "tlsof": "cross-env-shell NODE_ENV=development NODE_TLS_REJECT_UNAUTHORIZED=0 node ./index.js",
     "webpack:dev": "webpack --mode development --watch --progress ",
     "webpack:prod": "webpack --mode production --progress",
     "build": "webpack:prod",
     "dev": "concurrently \"npm run webpack:dev\" \"npm run tlsof\"",
-    "prod": "concurrently \"npm run webpack:prod\" \"npm run start\"",
+    "prod": "concurrently \"npm run webpack:prod\" \"npm run start:prod\"",
     "test": "jest"
   },
   "keywords": [
