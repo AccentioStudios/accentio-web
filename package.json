@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "Elevando el nivel y la experiencia de la web",
   "main": "index.js",
+  "engines": {
+    "node": "15.x"
+  },
   "scripts": {
     "start": "node ./index.js",
     "start:prod": "cross-env NODE_ENV=production npm start",
