@@ -4,7 +4,8 @@
   "description": "Elevando el nivel y la experiencia de la web",
   "main": "index.js",
   "engines": {
-    "node": "15.x"
+    "node": "15.x",
+    "npm": "7.x"
   },
   "scripts": {
     "start": "node ./index.js",
