@@ -1,0 +1,46 @@
+&-hero{
+    &__section {
+        width: 100%;
+        box-sizing: border-box;
+        height: calc(100vh - 131px);
+        max-height: 800px;
+        position: relative;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+    }
+    &__background {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        box-sizing: border-box;
+        overflow: visible;
+    }
+    &__gradientEdge {
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        width: 100%;
+        display: flex;
+        height: 60%;
+        align-items: flex-end;
+        justify-content: center;
+        z-index: 1;
+    }
+    &__headline {
+        position: relative;
+        left: 0px;
+        top: 0px;
+        z-index: 1;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        height: inherit;
+        h1{
+            width: 51%;
+            @include h1;
+            margin-top: 56px;
+            font-family: $fontSpace;
+        }
+    }
+}

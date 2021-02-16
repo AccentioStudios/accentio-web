@@ -1,0 +1,48 @@
+// Colors
+$background-color: #161229;
+$font-color: #fff;
+$primary-color: #46C4E2;
+$secondary-color: #F16750;
+
+// Accentio Colors
+$blue: #38557C;
+$cyan: #46C4E2;
+$orange: #F16750;
+$red: #C04E37;
+$white: #fff;
+$black: #000;
+
+// Text sizes fibonacci
+$font-size: 15.27px;
+$font-size-xxl: calc(4.23 * #{$font-size});
+$font-size-xl: calc(2.617 * #{$font-size});
+$font-size-lg: calc(1.618 * #{$font-size});
+$font-size-sm: calc(#{$font-size} / 1.618);
+$font-size-xs: calc(#{$font-size} / 2.617);
+$font-size-xxs: calc(#{$font-size} / 4.23);
+
+@mixin h1() {
+    font-size: $font-size-xl;
+    line-height: 1.4em;
+}
+@mixin h2() {
+    font-size: $font-size-lg;
+    line-height: 1.4em;
+}
+@mixin h3() {
+    font-size: $font-size-sm;
+    line-height: 1.4em;
+}
+@mixin h4() {
+    font-size: $font-size-xs;
+    line-height: 1.4em;
+}
+
+
+// Animation
+$transition-0-2s: all 0.2s cubic-bezier(1, 0, 0, 1);
+
+// Fonts
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Space+Grotesk:wght@300;400;500;700&display=swap');
+$fontSpace: 'Space Grotesk', sans-serif;
+$fontFamily: 'Lato', sans-serif;
