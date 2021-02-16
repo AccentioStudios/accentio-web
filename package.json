@@ -8,6 +8,7 @@
     "npm": "7.x"
   },
   "scripts": {
+    "heroku-prebuild": "npm install --dev",
     "start": "node ./index.js",
     "start:prod": "cross-env NODE_ENV=production npm start",
     "tlsof": "cross-env-shell NODE_ENV=development NODE_TLS_REJECT_UNAUTHORIZED=0 node ./index.js",
