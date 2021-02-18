@@ -68,6 +68,40 @@ p {
     font-family: $fontSpace!important;
 }
 
+.primary-color {
+    background-color: $primary-color;
+}
+.secondary-color {
+    background-color: $secondary-color;
+}
+
+.margin {
+    &-top{
+        &-md{
+            margin-top: 40px!important;
+        }
+        &-xl{
+            margin-top: 90px!important;
+        }
+    }
+    &-left{
+        &-md {
+            margin-left: 40px!important; 
+        }
+        &-xl{
+            margin-left: 90px!important;
+        }
+    }
+    &-right{
+        &-md {
+            margin-right: 40px!important; 
+        }
+        &-xl{
+            margin-right: 90px!important;
+        }
+    }
+}
+
 .flex-row-center, .flex-col-center {
     display: flex;
     justify-content: center;
@@ -93,6 +127,9 @@ p {
         height: 2px;
         background-color: $primary-color;
         min-width: 40px;
+        &.secondary-color {
+            background-color: $secondary-color!important;
+        }
     }
     // Components
     @import './components/header.scss';

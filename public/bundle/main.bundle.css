@@ -1162,6 +1162,33 @@ p {
   font-family: "Space Grotesk", sans-serif !important;
 }
 
+.primary-color {
+  background-color: #46C4E2;
+}
+
+.secondary-color {
+  background-color: #F16750;
+}
+
+.margin-top-md {
+  margin-top: 40px !important;
+}
+.margin-top-xl {
+  margin-top: 90px !important;
+}
+.margin-left-md {
+  margin-left: 40px !important;
+}
+.margin-left-xl {
+  margin-left: 90px !important;
+}
+.margin-right-md {
+  margin-right: 40px !important;
+}
+.margin-right-xl {
+  margin-right: 90px !important;
+}
+
 .flex-row-center, .flex-col-center {
   display: flex;
   justify-content: center;
@@ -1188,6 +1215,9 @@ p {
   height: 2px;
   background-color: #46C4E2;
   min-width: 40px;
+}
+.excelsior-divisor-line.secondary-color {
+  background-color: #F16750 !important;
 }
 .excelsior-header {
   position: relative;
@@ -1256,13 +1286,24 @@ p {
   outline: none;
   position: relative;
   display: block;
-  background-color: #46C4E2;
   color: #fff;
   border: 1px solid transparent;
   border-radius: 7px;
   font-weight: 700;
   transition: all 0.2s cubic-bezier(1, 0, 0, 1);
+  background-color: #46C4E2;
   cursor: pointer;
+}
+.excelsior-hero-button-xl.secondary-color, .excelsior-hero-button-md.secondary-color, .excelsior-hero-button-sm.secondary-color {
+  background-color: #F16750;
+}
+.excelsior-hero-button-xl.secondary-color:hover, .excelsior-hero-button-md.secondary-color:hover, .excelsior-hero-button-sm.secondary-color:hover {
+  background-color: #f5907f;
+  border: 1px solid #fbd6d0;
+}
+.excelsior-hero-button-xl.secondary-color:active, .excelsior-hero-button-md.secondary-color:active, .excelsior-hero-button-sm.secondary-color:active {
+  background-color: #ed3e21;
+  border: 1px solid #F16750;
 }
 .excelsior-hero-button-xl:hover, .excelsior-hero-button-md:hover, .excelsior-hero-button-sm:hover {
   background-color: #72d2e9;
@@ -1285,9 +1326,10 @@ p {
   width: 100%;
   box-sizing: border-box;
   height: calc(100vh - 131px);
-  max-height: 800px;
+  max-height: 600px;
+  min-height: 365px;
   position: relative;
-  overflow: visible;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
 }
@@ -1323,7 +1365,7 @@ p {
   width: 51%;
   font-size: calc(2.617 * 15.27px);
   line-height: 1.4em;
-  margin-top: 56px;
+  margin-top: 6%;
   font-family: "Space Grotesk", sans-serif;
 }
 .excelsior-menu-horizontal-xl {
@@ -1392,6 +1434,10 @@ p {
   display: inline-flex;
   width: 100%;
 }
+.excelsior-flexible-horizontal-list li {
+  display: block;
+}
+
 .hero-image {
   width: 701px;
   position: absolute;
@@ -1425,45 +1471,45 @@ p {
   align-self: flex-start;
 }
 
-#card-cod-moon {
+#card-codname {
   display: flex;
+  padding-top: 0px;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-#card-cod-moon .img-header {
-  width: 129px;
+#card-codname .img-header {
+  width: 185px;
   text-align: center;
   align-self: center;
-  margin-bottom: 21px;
 }
-#card-cod-moon .action-btn {
+#card-codname .action-btn {
   margin-top: 10px;
   margin-bottom: 12px;
   min-width: 150px;
   align-self: center;
 }
-#card-cod-moon h3 {
+#card-codname h3 {
   font-weight: 500;
   margin: 5px;
 }
-#card-cod-moon h1 {
+#card-codname h1 {
   margin: 10px;
 }
-#card-cod-moon .excelsior-divisor-line {
+#card-codname .excelsior-divisor-line {
   width: 115px;
   align-self: center;
   margin-bottom: 11px;
   margin-top: 7px;
 }
 
-.prod1 {
+.prod1, .prod2 {
   margin-top: 45px;
 }
-.prod1-section2 {
+.prod1-section2, .prod2-section2 {
   margin-top: 50px;
 }
-.prod1-section3 {
+.prod1-section3, .prod2-section3 {
   position: relative;
   margin-top: 0px;
   width: 100%;
@@ -1473,18 +1519,14 @@ p {
   background-size: contain;
   background-repeat: no-repeat;
 }
-.prod1-section3 .advanced-moon-colony {
+.prod1-section3 .advanced-moon-colony, .prod2-section3 .advanced-moon-colony {
   left: 0px;
   bottom: 0px;
   width: 100%;
   position: absolute;
 }
 
-.codname-moon-info {
-  margin-left: 40px;
-  margin-top: 40px;
-}
-.codname-moon-info .excelsior-divisor-line {
+.codname-info .excelsior-divisor-line {
   max-width: 100px;
 }
 
@@ -1493,6 +1535,21 @@ p {
   justify-content: space-between;
   text-align: center;
 }
+.feature-card h3 {
+  line-height: 1.56em;
+  margin: 7px;
+}
 .feature-card img {
-  height: 145px;
+  height: 175px;
+}
+
+.advanced-mars-colony {
+  background-image: url(img/mars_colonized_hd.svg);
+  width: 100%;
+  max-width: 1500px;
+  height: 360px;
+  background-position: center;
+  background-size: cover;
+  margin: auto;
+  margin-top: 80px;
 }
