@@ -33,32 +33,32 @@ require('./routes/api/v1/api.v1.routes')(app);
 
 const port = process.env.PORT || 4555;
 let server = https.createServer(app);
-switch (process.env.NODE_ENV) {
-  case 'development':
-    server = https.createServer({
-      key: fs.readFileSync(
-        path.resolve(process.env.SSL_DEV_KEY || './ssl/localhost.key')
-      ),
-      cert: fs.readFileSync(
-        path.resolve(process.env.SSL_DEV_CRT || './ssl/localhost.crt')
-      )
-    }, app);
-    break;
-  default:
-    server = https.createServer({
-      key: fs.readFileSync(
-        process.env.SSL_PDT_KEY || '/etc/nginx/ssl/domain.key'
-      ),
-      cert: fs.readFileSync(
-        process.env.SSL_PDT_CRT || '/etc/nginx/ssl/domain.crt'
-      ),
-      ca: fs.readFileSync(
-        process.env.SSL_PDT_CA || '/etc/nginx/ssl/domain.ca-bundle'
-      ),
-      requestCert: true,
-      rejectUnauthorized: false
-    }, app);
-    break;
-}
+// switch (process.env.NODE_ENV) {
+//   case 'development':
+//     server = https.createServer({
+//       key: fs.readFileSync(
+//         path.resolve(process.env.SSL_DEV_KEY || './ssl/localhost.key')
+//       ),
+//       cert: fs.readFileSync(
+//         path.resolve(process.env.SSL_DEV_CRT || './ssl/localhost.crt')
+//       )
+//     }, app);
+//     break;
+//   default:
+//     server = https.createServer({
+//       key: fs.readFileSync(
+//         process.env.SSL_PDT_KEY || '/etc/nginx/ssl/domain.key'
+//       ),
+//       cert: fs.readFileSync(
+//         process.env.SSL_PDT_CRT || '/etc/nginx/ssl/domain.crt'
+//       ),
+//       ca: fs.readFileSync(
+//         process.env.SSL_PDT_CA || '/etc/nginx/ssl/domain.ca-bundle'
+//       ),
+//       requestCert: true,
+//       rejectUnauthorized: false
+//     }, app);
+//     break;
+// }
 
 server.listen(port, () => clog.info(`Server corriendo en el puerto ${port}...`));
