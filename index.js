@@ -44,7 +44,7 @@ let server = https.createServer(app);
 //       )
 //     }, app);
 //     break;
-//   default:
+//   default: 
 //     server = https.createServer({
 //       key: fs.readFileSync(
 //         process.env.SSL_PDT_KEY || '/etc/nginx/ssl/domain.key'
