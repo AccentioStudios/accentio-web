@@ -1,0 +1,81 @@
+// Headlines
+h1 {
+    @include h1;
+}
+h2 {
+    @include h2;
+}
+h3 {
+    @include h3;
+}
+h4 {
+    @include h4;
+}
+h1, h2, h3, h4 {
+    color: $font-color;
+}
+h1, h2{
+    font-family: $fontSpace;
+}
+
+// Paragraph
+p {
+    line-height: 2.0em;
+}
+
+// Text Sizes
+.text {
+    &-xxl {
+        font-size: $font-size-xxl;
+    }
+    &-xl {
+        font-size: $font-size-xl;
+    }
+    &-lg {
+        font-size: $font-size-lg;
+    }
+    &-md {
+        font-size: $font-size-md;
+    }
+    &-sm {
+        font-size: $font-size-sm;
+    }
+    &-xs {
+        font-size: $font-size-xs;
+    }
+    &-xxs {
+        font-size: $font-size-xxs;
+    }
+
+    // Text Weight
+    &-strong, &-700, &-bold {
+        font-weight: 700;
+    }
+    &-normal, &-500 {
+        font-weight: 500;
+    }
+    &-light, &-400 {
+        font-weight: 400;
+    }
+
+    // Align 
+    &-center {
+        text-align: center;
+    }
+    &-left {
+        text-align: left;
+    }
+    &-right {
+        text-align: right;
+    }
+}
+
+// Fonts
+.font {
+    &-primary {
+        font-family: $fontFamily!important;
+    }
+    &-secondary {
+        font-family: $fontSpace!important;
+    }
+}

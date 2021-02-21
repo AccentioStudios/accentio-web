@@ -1,14 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="1484" height="422.738" viewBox="0 0 1484 422.738">
   <defs>
-    <style>
-      .cls-1 {
-        fill: url(#radial-gradient);
-      }
-
-      .cls-2 {
-        fill: url(#radial-gradient-2);
-      }
-    </style>
     <radialGradient id="radial-gradient" cx="0.506" cy="1" r="0.433" gradientTransform="translate(0 -1.31) scale(1 2.31)" gradientUnits="objectBoundingBox">
       <stop offset="0" stop-color="#fff" stop-opacity="0.212"/>
       <stop offset="0.54" stop-color="#5451ac" stop-opacity="0.149"/>
@@ -22,7 +13,7 @@
     </radialGradient>
   </defs>
   <g id="Fondo_degradado_fuerte" transform="translate(-218 -1749.262)">
-    <path id="Background_Degradado" data-name="Background Degradado" class="cls-1" d="M0,0H1484V422.738H0Z" transform="translate(218 1749.262)"/>
-    <path id="Background_Degradado-2" data-name="Background Degradado" class="cls-2" d="M0,0H1484V422.738H0Z" transform="translate(218 1749.262)"/>
+    <path id="Background_Degradado" data-name="Background Degradado" d="M0,0H1484V422.738H0Z" transform="translate(218 1749.262)" fill="url(#radial-gradient)"/>
+    <path id="Background_Degradado-2" data-name="Background Degradado" d="M0,0H1484V422.738H0Z" transform="translate(218 1749.262)" fill="url(#radial-gradient-2)"/>
   </g>
 </svg>
