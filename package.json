@@ -8,15 +8,7 @@
     "npm": "7.x"
   },
   "scripts": {
-    "start": "node ./index.js",
-    "startprod": "cross-env NODE_ENV=production npm start",
-    "tlsof": "cross-env-shell NODE_ENV=development NODE_TLS_REJECT_UNAUTHORIZED=0 node ./index.js",
-    "webpackdev": "webpack --mode development --watch --progress ",
-    "webpackprod": "webpack --mode production --progress",
-    "build": "webpack:prod",
-    "dev": "concurrently \"npm run webpackdev\" \"npm run tlsof\"",
-    "prod": "concurrently \"npm run webpackprod\" \"npm run startprod\"",
-    "test": "jest"
+    "start": "node ./index.js"
   },
   "keywords": [
     "webpage",
