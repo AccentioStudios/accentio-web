@@ -1,0 +1,35 @@
+// Mobile lg
+@media (min-width: $screenTablet) and
+       (max-width: $screenDesktop){
+    @include misc-MQ-mobile-lg();
+    @include text-MQ-mobile-lg();
+    @include hero-MQ-mobile-lg();
+    // @include hero-MQ();
+}
+
+// Desktop 
+// All
+@media screen and (min-width: $screenDesktop) { 
+    @include margin-MQ-desktop();
+    @include misc-MQ-desktop();
+    @include text-MQ-desktop();
+    @include header-MQ-desktop();
+    @include hero-MQ-desktop();
+    @include buttons-MQ-desktop();
+    @include lists-MQ-desktop();
+}
+// Medium Desktop
+@media screen and (min-width: $screenDesktop)
+              and (max-width: $screenLarge) { 
+    @include text-MQ-desktop-md();
+    @include hero-MQ-desktop-md();
+    // @include header-MQ-desktop();
+    // @include buttons-MQ-desktop();
+}
+// Large Desktop
+@media screen and (min-width: $screenLarge) { 
+    // @include text-MQ-desktop-md();
+    // @include hero-MQ-desktop-md();
+    // @include header-MQ-desktop();
+    // @include buttons-MQ-desktop();
+}

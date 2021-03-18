@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 22.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1280 739.3" style="enable-background:new 0 0 1280 739.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{display:none;}
+	.st1{display:inline;fill:#161229;}
+	.st2{display:inline;}
+	.st3{fill:url(#SVGID_1_);}
+	.st4{opacity:0.69;}
+	.st5{fill:url(#SVGID_2_);}
+	.st6{fill:url(#SVGID_3_);}
+	.st7{fill:url(#SVGID_4_);}
+	.st8{clip-path:url(#SVGID_6_);}
+	.st9{fill:url(#SVGID_7_);}
+	.st10{opacity:0.69;clip-path:url(#SVGID_6_);}
+	.st11{fill:url(#SVGID_8_);}
+	.st12{fill:url(#SVGID_9_);}
+	.st13{clip-path:url(#SVGID_11_);}
+	.st14{fill:url(#SVGID_12_);}
+	.st15{fill:url(#SVGID_13_);}
+</style>
+<g id="heroright">
+</g>
+<g id="heroleft">
+	<g id="glowing">
+	</g>
+</g>
+<g id="hero">
+	<g id="bg_1_" class="st0">
+		<rect x="0.5" y="0.5" class="st1" width="1279" height="738"/>
+		<path class="st2" d="M1279,1v737H1V1H1279 M1280,0H0v739h1280V0L1280,0z"/>
+	</g>
+	<g id="glowing1">
+		<g>
+			<defs>
+				<rect id="SVGID_5_" width="1280" height="739.3"/>
+			</defs>
+			<clipPath id="SVGID_1_">
+				<use xlink:href="#SVGID_5_"  style="overflow:visible;"/>
+			</clipPath>
+			<g style="clip-path:url(#SVGID_1_);">
+				
+					<radialGradient id="SVGID_2_" cx="887.8956" cy="420.3438" r="1224.3574" gradientTransform="matrix(0.3916 0 0 0.3328 -347.2301 -140.4089)" gradientUnits="userSpaceOnUse">
+					<stop  offset="0" style="stop-color:#1644BD;stop-opacity:0.7"/>
+					<stop  offset="0.1484" style="stop-color:#1644AF;stop-opacity:0.5961"/>
+					<stop  offset="0.471" style="stop-color:#164496;stop-opacity:0.3703"/>
+					<stop  offset="0.7643" style="stop-color:#164486;stop-opacity:0.165"/>
+					<stop  offset="1" style="stop-color:#164481;stop-opacity:0"/>
+				</radialGradient>
+				<ellipse class="st5" cx="0.5" cy="-0.5" rx="479.5" ry="407.5"/>
+			</g>
+			<g style="opacity:0.69;clip-path:url(#SVGID_1_);">
+				
+					<radialGradient id="SVGID_3_" cx="2721.1624" cy="7138.3516" r="1224.3574" gradientTransform="matrix(0.2697 -0.3313 0.1393 0.1134 -502.2208 724.4335)" gradientUnits="userSpaceOnUse">
+					<stop  offset="0" style="stop-color:#9B1B43;stop-opacity:0.5"/>
+					<stop  offset="1" style="stop-color:#9B1B43;stop-opacity:0"/>
+				</radialGradient>
+				<path class="st6" d="M896.1,1038.3c-94.2-76.7-22.8-320.5,159.6-544.5s406.6-343.4,500.8-266.7s22.8,320.5-159.6,544.5
+					S990.3,1115,896.1,1038.3z"/>
+			</g>
+			<g style="clip-path:url(#SVGID_1_);">
+				
+					<radialGradient id="SVGID_4_" cx="4439.6777" cy="351.7443" r="1224.3574" gradientTransform="matrix(0.5681 0 0 0.4496 -1080.4724 -192.6526)" gradientUnits="userSpaceOnUse">
+					<stop  offset="0" style="stop-color:#1644BD;stop-opacity:0.7"/>
+					<stop  offset="0.1484" style="stop-color:#1644AF;stop-opacity:0.5961"/>
+					<stop  offset="0.471" style="stop-color:#164496;stop-opacity:0.3703"/>
+					<stop  offset="0.7643" style="stop-color:#164486;stop-opacity:0.165"/>
+					<stop  offset="1" style="stop-color:#164481;stop-opacity:0"/>
+				</radialGradient>
+				<ellipse class="st7" cx="1441.5" cy="-34.5" rx="695.5" ry="550.5"/>
+			</g>
+		</g>
+	</g>
+</g>
+<g id="simpleblue">
+	<g id="glowing2">
+	</g>
+</g>
+<g id="littleblue">
+	<g id="glowing3">
+	</g>
+</g>
+</svg>

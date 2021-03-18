@@ -1,0 +1,44 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
+
+// Variables
+@import './_variables.scss';
+
+// Grid System by Fluidable
+@import './libs/fluidable.scss';
+
+// Components
+@import './components/miscellaneous.scss';
+@import './components/header.scss';
+@import './components/buttons.scss';
+@import './components/hero.scss';
+@import './components/menus.scss';
+@import './components/card.scss';
+@import './components/lists.scss';
+@import './components/icons.scss';
+
+body {
+    background-color: $background-color;
+}
+a {
+    color: $font-color;
+}
+
+.primary-color {
+    background-color: $primary-color;
+}
+.secondary-color {
+    background-color: $secondary-color;
+}
+
+// Texts
+@import './text.scss';
+
+// Margins
+@import './margin.scss';
+
+// Flex Box
+@import './flexbox.scss';
+
+// Media Querys
+@import './media-querys.scss';
