@@ -26,6 +26,8 @@ app.use(express.static(__dirname + '/public'));
 
 // API VERSION 1
 require('./routes/api/v1/api.v1.routes')(app);
+// WEB ROUTING
+require('./routes/api/v1/api.v1.routes')(app);
 
 app.use(function (req, res, next) {
   res.setHeader(
