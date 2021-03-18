@@ -8,9 +8,9 @@
     "npm": "7.x"
   },
   "scripts": {
-    "start": "node ./index.js",
+    "start": "node index.js",
     "dev": "webpack serve",
-    "build": "webpack --mode production"
+    "build": "webpack --mode production --config ./webpack.config.js --progress"
   },
   "keywords": [
     "webpage",
@@ -23,7 +23,6 @@
   "dependencies": {
     "@babel/core": "^7.12.10",
     "@babel/preset-env": "^7.12.13",
-    "@fortawesome/fontawesome-free": "^5.15.2",
     "@webpack-cli/init": "^1.1.1",
     "animate.css": "^4.1.1",
     "autoprefixer": "^10.2.4",

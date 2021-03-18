@@ -148,10 +148,6 @@ $padding-hero-feature-desktop:90px;
 @mixin hero-MQ-mobile-lg(){
     .excelsior {
         &-hero{
-            &__headline {
-                h1 {
-                }
-            }
             &-features {
                 &__item-content {
                     padding-top: $padding-hero-feature-desktop;

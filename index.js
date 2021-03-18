@@ -65,6 +65,9 @@ let server = http.createServer(app);
 //     break;
 // }
 
+const CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
+console.log('CONCURRENCY', CONCURRENCY);
+
 server.listen(port, () => {
     clog.info(`Server corriendo en el puerto ${port}...`);
     clog.info(`Y en la direccion http://localhost:${port}...`);
