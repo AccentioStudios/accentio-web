@@ -1,4 +1,5 @@
 const https = require('https');
+const http = require('http');
 const fs = require('fs');
 const path = require('path');
 const clog = require('console-log-level')({ level: 'debug' });
@@ -26,36 +27,43 @@ app.use(express.static(__dirname + '/public'));
 // API VERSION 1
 require('./routes/api/v1/api.v1.routes')(app);
 
+app.use(function (req, res, next) {
+  res.setHeader(
+    'Content-Security-Policy',
+    "default-src 'self'; font-src 'self'; img-src 'self'; script-src 'self'; style-src 'self'; frame-src 'self'"
+  );
+  next();
+});
 
 const port = process.env.PORT || 4555;
-let server = https.createServer(app);
-switch (process.env.NODE_ENV) {
-  case 'development':
-    server = https.createServer({
-      key: fs.readFileSync(
-        path.resolve(process.env.SSL_DEV_KEY || './ssl/localhost.key')
-      ),
-      cert: fs.readFileSync(
-        path.resolve(process.env.SSL_DEV_CRT || './ssl/localhost.crt')
-      )
-    }, app);
-    break;
-  default: 
-    server = https.createServer({
-      key: fs.readFileSync(
-        process.env.SSL_PDT_KEY || '/etc/nginx/ssl/domain.key'
-      ),
-      cert: fs.readFileSync(
-        process.env.SSL_PDT_CRT || '/etc/nginx/ssl/domain.crt'
-      ),
-      ca: fs.readFileSync(
-        process.env.SSL_PDT_CA || '/etc/nginx/ssl/domain.ca-bundle'
-      ),
-      requestCert: true,
-      rejectUnauthorized: false
-    }, app);
-    break;
-}
+let server = http.createServer(app);
+// switch (process.env.NODE_ENV) {
+//   case 'development':
+//     server = https.createServer({
+//       key: fs.readFileSync(
+//         path.resolve(process.env.SSL_DEV_KEY || './ssl/localhost.key')
+//       ),
+//       cert: fs.readFileSync(
+//         path.resolve(process.env.SSL_DEV_CRT || './ssl/localhost.crt')
+//       )
+//     }, app);
+//     break;
+//   default: 
+//     server = https.createServer({
+//       key: fs.readFileSync(
+//         process.env.SSL_PDT_KEY || '/etc/nginx/ssl/domain.key'
+//       ),
+//       cert: fs.readFileSync(
+//         process.env.SSL_PDT_CRT || '/etc/nginx/ssl/domain.crt'
+//       ),
+//       ca: fs.readFileSync(
+//         process.env.SSL_PDT_CA || '/etc/nginx/ssl/domain.ca-bundle'
+//       ),
+//       requestCert: true,
+//       rejectUnauthorized: false
+//     }, app);
+//     break;
+// }
 
 server.listen(port, () => {
     clog.info(`Server corriendo en el puerto ${port}...`);

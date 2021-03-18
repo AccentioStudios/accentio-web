@@ -113,7 +113,7 @@ module.exports = {
                 loader: 'css-loader',
                 options: {
                     importLoaders: 2,
-                    sourceMap: true,
+                    sourceMap: isDevelopment ? true : false,
                     url: false
                 }
             },
@@ -123,7 +123,7 @@ module.exports = {
                     // plugins: () => [
                     //     // require('autoprefixer')
                     // ],
-                    sourceMap: true
+                    sourceMap: isDevelopment ? true : false
                 }
             },
             // Resolve URLs
@@ -132,7 +132,7 @@ module.exports = {
             {
                 loader: 'sass-loader',
                 options: {
-                    sourceMap: true,
+                    sourceMap: isDevelopment ? true : false,
                 }
             }
         ],
@@ -156,5 +156,6 @@ module.exports = {
     },
     minimize: isDevelopment ? false : true,
     minimizer: [new TerserPlugin()],
-}
+},
+devtool: 'cheap-module-source-map'
 }

@@ -1,7 +1,8 @@
 // Colors
 $background-color: #161229;
 $font-color: #fff;
-$primary-color: #46C4E2;
+$primary-color-real: #46C4E2;
+$primary-color: #1fa5c7;
 $secondary-color: #F16750;
 
 // Accentio Colors
@@ -12,8 +13,16 @@ $red: #C04E37;
 $white: #fff;
 $black: #000;
 
+// Responsive
+$max-container-width: 1400px;
+$viewport-padding: 6vw;
+
+$screenTablet: 	768px;
+$screenDesktop: 900px;
+$screenLarge:   1060px;
+
 // Text sizes fibonacci
-$font-size: 16px;
+$font-size: 1em;
 $font-size-xxl: calc(4.23 * 1em);
 $font-size-xl: calc(2.617 * 1em);
 $font-size-lg: calc(1.618 * 1em);
@@ -46,6 +55,5 @@ $letter-spacing: 0.01em;
 $transition-0-2s: all 0.2s cubic-bezier(1, 0, 0, 1);
 
 // Fonts
-@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
 $fontSpace: 'Space Grotesk', sans-serif;
 $fontFamily: 'Lato', sans-serif;

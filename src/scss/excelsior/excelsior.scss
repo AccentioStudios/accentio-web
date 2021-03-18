@@ -1,75 +1,24 @@
+// Imports
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Space+Grotesk:wght@400;600;700&display=swap');
+
 // Variables
 @import './_variables.scss';
 
 // Grid System by Fluidable
 @import './libs/fluidable.scss';
 
-.excelsior {
-    &-wrapper {
-        width: 100%;
-        overflow-x: hidden;
-        min-height: 100vh;
-        padding: 0px;
-        margin: 0px;
-        position: relative;
-    }
-    
-    &-cut-wave-blue {
-        position: absolute;
-        bottom: -1px;
-        left: 0;
-        right: 0;
-        height: 13vw;
-        background-image: url('/img/cut-wave-blue.svg');
-        background-repeat: no-repeat;
-        background-position: 50% 50%;
-        background-size: cover;
-        content: "";
-        margin-top: -1px;
-        z-index: 2;
-        &.top {
-            top: 0px;
-            transform: rotate(180deg);
-        }
-    }
-    &-divisor-line {
-        height: 2px;
-        background-color: $primary-color;
-        min-width: 40px;
-        &.line-sm{
-            width: 115px;
-        }
-        &.line-md{
-            width: 200px;
-        }
-        &.secondary-color {
-            background-color: $secondary-color!important;
-        }
-    }
-    // Components
-    @import './components/header.scss';
-    @import './components/buttons.scss';
-    @import './components/hero.scss';
-    @import './components/menus.scss';
-    @import './components/card.scss';
-    @import './components/lists.scss';
-}
-
-// Texts
-@import './text.scss';
-
-//Margins
-@import './margin.scss';
-
-//Flex Box
-@import './flexbox.scss';
+// Components
+@import './components/miscellaneous.scss';
+@import './components/header.scss';
+@import './components/buttons.scss';
+@import './components/hero.scss';
+@import './components/menus.scss';
+@import './components/card.scss';
+@import './components/lists.scss';
+@import './components/icons.scss';
 
 body {
-    font-size: $font-size;
-    font-family: $fontFamily;
-    color: $font-color;
     background-color: $background-color;
-    letter-spacing: $letter-spacing;
 }
 a {
     color: $font-color;
@@ -81,3 +30,15 @@ a {
 .secondary-color {
     background-color: $secondary-color;
 }
+
+// Texts
+@import './text.scss';
+
+// Margins
+@import './margin.scss';
+
+// Flex Box
+@import './flexbox.scss';
+
+// Media Querys
+@import './media-querys.scss';

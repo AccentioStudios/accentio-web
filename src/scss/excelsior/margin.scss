@@ -1,3 +1,10 @@
+// Margin
+$margin-1: 0.38em;  
+$margin-2: 0.75em;  
+$margin-3: 1.50em;  
+$margin-4: 2.25em;  
+$margin-5: 3em;
+
 .margin {
     &-auto {
         margin:auto;
@@ -6,38 +13,38 @@
         margin: 0px!important;
     }
     &-xxs{
-        margin: 5px!important;
+        margin: $margin-1!important;
     }
     &-xs{
-        margin: 10px!important;
+        margin: $margin-2!important;
     }
     &-sm{
-        margin: 20px!important;
+        margin: $margin-3!important;
     }
     &-md{
-        margin: 40px!important;
+        margin: $margin-4!important;
     }
     &-xl{
-        margin: 90px!important;
+        margin: $margin-5!important;
     }
     &-top{
         &-none{
             margin-top: 0px!important;
         }
         &-xxs{
-            margin-top: 5px!important;
+            margin-top: $margin-1!important;
         }
         &-xs{
-            margin-top: 10px!important;
+            margin-top: $margin-2!important;
         }
         &-sm{
-            margin-top: 20px!important;
+            margin-top: $margin-3!important;
         }
         &-md{
-            margin-top: 40px!important;
+            margin-top: $margin-4!important;
         }
         &-xl{
-            margin-top: 90px!important;
+            margin-top: $margin-5!important;
         }
     }
     &-left{
@@ -45,16 +52,16 @@
             margin-left: 0px!important;
         }
         &-xxs{
-            margin-left: 5px!important;
+            margin-left: $margin-1!important;
         }
         &-xs{
-            margin-left: 10px!important;
+            margin-left: $margin-2!important;
         }
         &-md {
-            margin-left: 40px!important; 
+            margin-left: $margin-3!important; 
         }
         &-xl{
-            margin-left: 90px!important;
+            margin-left: $margin-4!important;
         }
     }
     &-right{
@@ -62,16 +69,16 @@
             margin-right: 0px!important;
         }
         &-xxs{
-            margin-right: 5px!important;
+            margin-right: $margin-1!important;
         }
         &-xs{
-            margin-right: 10px!important;
+            margin-right: $margin-2!important;
         }
         &-md {
-            margin-right: 40px!important; 
+            margin-right: $margin-3!important; 
         }
         &-xl{
-            margin-right: 90px!important;
+            margin-right: $margin-4!important;
         }
     }
     &-bottom{
@@ -79,19 +86,121 @@
             margin-bottom: 0px!important;
         }
         &-xxs{
-            margin-bottom: 5px!important;
+            margin-bottom: $margin-1!important;
         }
         &-xs{
-            margin-bottom: 10px!important;
+            margin-bottom: $margin-2!important;
         }
         &-sm{
-            margin-bottom: 20px!important;
+            margin-bottom: $margin-3!important;
         }
         &-md {
-            margin-bottom: 40px!important; 
+            margin-bottom: $margin-4!important; 
         }
         &-xl{
-            margin-bottom: 90px!important;
+            margin-bottom: $margin-5!important;
+        }
+    }
+}
+
+$incrementMargin: 0.23em;
+
+@mixin margin-MQ-desktop() {
+    .margin {
+        &-auto {
+            margin:auto;
+        }
+        &-none{
+            margin: 0px!important;
+        }
+        &-xxs{
+            margin: $margin-1 + $incrementMargin!important;
+        }
+        &-xs{
+            margin: $margin-2 + $incrementMargin!important;
+        }
+        &-sm{
+            margin: $margin-3 + $incrementMargin!important;
+        }
+        &-md{
+            margin: $margin-4 + $incrementMargin!important;
+        }
+        &-xl{
+            margin: $margin-5 + $incrementMargin!important;
+        }
+        &-top{
+            &-none{
+                margin-top: 0px!important;
+            }
+            &-xxs{
+                margin-top: $margin-1 + $incrementMargin!important;
+            }
+            &-xs{
+                margin-top: $margin-2 + $incrementMargin!important;
+            }
+            &-sm{
+                margin-top: $margin-3 + $incrementMargin!important;
+            }
+            &-md{
+                margin-top: $margin-4 + $incrementMargin!important;
+            }
+            &-xl{
+                margin-top: $margin-5 + $incrementMargin!important;
+            }
+        }
+        &-left{
+            &-none{
+                margin-left: 0px!important;
+            }
+            &-xxs{
+                margin-left: $margin-1 + $incrementMargin!important;
+            }
+            &-xs{
+                margin-left: $margin-2 + $incrementMargin!important;
+            }
+            &-md {
+                margin-left: $margin-3 + $incrementMargin!important; 
+            }
+            &-xl{
+                margin-left: $margin-4 + $incrementMargin!important;
+            }
+        }
+        &-right{
+            &-none{
+                margin-right: 0px!important;
+            }
+            &-xxs{
+                margin-right: $margin-1 + $incrementMargin!important;
+            }
+            &-xs{
+                margin-right: $margin-2 + $incrementMargin!important;
+            }
+            &-md {
+                margin-right: $margin-3 + $incrementMargin!important; 
+            }
+            &-xl{
+                margin-right: $margin-4 + $incrementMargin!important;
+            }
+        }
+        &-bottom{
+            &-none{
+                margin-bottom: 0px!important;
+            }
+            &-xxs{
+                margin-bottom: $margin-1 + $incrementMargin!important;
+            }
+            &-xs{
+                margin-bottom: $margin-2 + $incrementMargin!important;
+            }
+            &-sm{
+                margin-bottom: $margin-3 + $incrementMargin!important;
+            }
+            &-md {
+                margin-bottom: $margin-4 + $incrementMargin!important; 
+            }
+            &-xl{
+                margin-bottom: $margin-5 + $incrementMargin!important;
+            }
         }
     }
 }

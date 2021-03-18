@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Accentio Studios</title>
+    <meta name="description" content="Accentio Studios es una compañia de desarrollo de software para humanos, facilitando el uso y completamente enfocados en la experiencia del usuario." />
+    <link rel="canonical" href="https://accentiostudios.com/" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Desarrollo de software, web y mobile diseñado para humanos." />
+    <meta name="og:description" content="Accentio Studios es una compañia de desarrollo de software para humanos, facilitando el uso y completamente enfocados en la experiencia del usuario." />
+    <meta property="og:url" content="https://accentiostudios.com/" />
+    <meta property="og:site_name" content="Accentio Studios" />
+    <%= require('../partials/head.partials.ejs')() %>
+</head>
+<body class="excelsior-wrapper">
+    <header class="excelsior-header">
+        <div class="container excelsior-header__content">
+            <div class="col-3 excelsior-header__brand">
+                <img src="/img/brand_accentio.png" alt="brand_accentio" width="231.58" height="58.97">
+            </div>
+            <div class="col-6 excelsior-header__menu">
+                <nav>
+                    <ul>
+                        <li><a href="/web-development">Web Develop</a></li>
+                        <li><a href="/about">Quienes somos</a></li>
+                        <li><a href="/contact">Contacto</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="col-3 excelsior-header__hero-section">
+                <a href="https://calendly.com/accentiostudios-alvaro/briefing-proyecto-nuevo" class="excelsior-hero-button-xl">
+                    Inicia con nosotros
+                </a>
+            </div>
+        </div>
+    </header>
+    <section class="excelsior-hero__section fixed-size">
+        <div class="container excelsior-hero__headline">
+            <h1>Eleve el nivel de su empresa y lleve a sus usuários las mejores experiencias de internet</h1>
+            <div class="arrow-down"></div>
+        </div>
+        <div class="excelsior-hero__gradientEdge">
+            <img class="unselectable" src="/img/BackgroundDegradado.svg" alt="">
+        </div>
+        <div class="excelsior-hero__background">
+            <div class="container height-inherit">
+                <img class="hero-image unselectable" src="/img/LineArtHeroImage.svg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="container menu1">
+        <div class="excelsior-menu-horizontal-xl">
+            <nav>
+                <ul>
+                    <li><a href="">Plan Particular</a></li>
+                    <li><a href="">Plan Empresas</a></li>
+                </ul>
+            </nav>
+        </div>
+    </section>
+    <section class="container prod1">
+        <div class="col-group prod1-section1">
+            <div class="col-5">
+                <div class="excelsior-card padding-xl feature-card" style="padding-top:0px">
+                    <img class="feature-card__main-img" src="./img/luna.svg" alt="">
+                    <h3 class="text-md margin-xs">Plan para particulares</h3>
+                    <h1 class="text-lg margin-bottom-sm margin-top-none">Codename: Moon</h1>
+                    <div class="excelsior-divisor-line line-sm"></div>
+                    <p class="text-md">
+                        Este plan es diseñado para quien esta comenzando, para particulares, empreendedores y pequenas empresas que quieren crear sus propias herramientas para la web.
+                    </p>
+                    <button class="excelsior-hero-button-md margin-xxs">Ver mas</button>
+                </div>
+            </div>
+            <div class="col-7">
+                <div class="codname-info margin-top-md margin-left-md">
+                    <div class="excelsior-divisor-line"></div>
+                    <h1>Estamos aqui para 
+                        <br>
+                        ayudarte</h1>
+                    <p>Ve mas alla y expande tus fronteras. Lleva tu proyecto al mar de la información y alcanza lugares que nunca antes habias visto. Crearemos junto a ti la nave perfecta para comenzar el despegue de tu crecimiento. Te ayudaremos a elevar tu proyecto de nivel, construyendo junto a ti pieza por pieza las soluciones mas excepcionales, de acuerdo a tus gustos y necesidades.</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-group prod1-section2">
+            <ul class="excelsior-flexible-horizontal-list flex-row-center">
+                <li class="excelsior-card nobody padding-xl feature-card">
+                    <img class="feature-card__main-img" src="/img/rocketlvl1.svg" alt="rocketlvl1">
+                    <h3 class="text-md text-strong font-primary">Despega tu negocio</h3>
+                </li>
+                <li class="excelsior-card nobody padding-xl feature-card">
+                    <img class="feature-card__main-img" src="/img/luna_arrival.svg" alt="moon-with-rocketlvl1">
+                    <h3 class="text-md text-strong font-primary">Establece tu imagen</h3>
+                </li>
+                <li class="excelsior-card nobody padding-xl feature-card">
+                    <img class="feature-card__main-img" src="/img/luna_colonized.svg" alt="moon-colony">
+                    <h3 class="text-md text-strong font-primary">Desarrolla y cumple</h3>
+                </li>
+            </ul>
+        </div>
+        <div class="prod1-section3">
+            <img class="advanced-moon-colony" src="/img/Luna_Colonia_Avanzada.png" alt="">
+        </div>
+    </section>
+    <section class="container prod2 margin-top-xl">
+        <div class="col-group prod2-section1">
+            <div class="col-7">
+                <div class="codname-info margin-top-md margin-right-md">
+                    <div class="excelsior-divisor-line secondary-color"></div>
+                    <h1>Impulsa todavia más 
+                        <br>
+                        tus objetivos</h1>
+                    <p>Tu nave ya llegó a la luna, ya tu colonia esta establecida, pero quieres todavia más, pero la tecnologia que tienes actualmente no te es suficiente. Es momento de avanzar y llegar al siguiente objetivo, llevar tus herramientas a un nível mas especializado. Para eso, crearemos contigo, de la mano con las nuevas tecnologias, soluciones para tus necesidades mas exigentes.</p>
+                </div>
+            </div>
+            <div class="col-5">
+                <div class="excelsior-card padding-xl feature-card" style="padding-top:0px">
+                    <img class="feature-card__main-img" src="./img/mars.svg" alt="">
+                    <h3 class="text-md margin-xs">Plan para empresas</h3>
+                    <h1 class="text-lg margin-bottom-sm margin-top-none">Codename: Mars</h1>
+                    <div class="excelsior-divisor-line line-sm secondary-color margin-auto"></div>
+                    <p class="text-md">
+                        Este plan es diseñado la mediana empresa, startup o grande empresa que necesitan mejorar e innovar sus propias herramientas para la web.
+                    </p>
+                    <button class="excelsior-hero-button-md secondary-color margin-xxs">Proximamente</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-group prod2-section2">
+            <ul class="excelsior-flexible-horizontal-list flex-row-center">
+                <li class="excelsior-card nobody padding-xl feature-card">
+                    <img class="feature-card__main-img" src="/img/rocketlvl2.svg" alt="rocketlvl2">
+                    <h3 class="text-md text-strong font-primary">Expande aun más <br> tus fronteras</h3>
+                </li>
+                <li class="excelsior-card nobody padding-xl feature-card">
+                    <img class="feature-card__main-img" src="/img/next_objective.svg" alt="mars-next-objective">
+                    <h3 class="text-md text-strong font-primary">Define tu proximo<br>objetivo</h3>
+                </li>
+                <li class="excelsior-card nobody padding-xl feature-card">
+                    <img class="feature-card__main-img" src="/img/mars_colonized.svg" alt="mars-colony">
+                    <h3 class="text-md text-strong font-primary">Llega al siguiente<br>nivel</h3>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <div class="excelsior-hero-image img-xl">
+        <div class="excelsior-cut-wave-blue top"></div>
+        <img class="hero-image-cover unselectable" src="/img/mars_colonized_hd.svg" alt="">
+    </div>
+    <%= require('../partials/footer.partials.ejs')() %>
+</body>
+</html>

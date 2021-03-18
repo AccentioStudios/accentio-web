@@ -1,3 +1,9 @@
+body {
+    font-size: 14px;
+    font-family: $fontFamily;
+    color: $font-color;
+    letter-spacing: $letter-spacing;
+}
 // Headlines
 h1 {
     @include h1;
@@ -77,5 +83,24 @@ p {
     }
     &-secondary {
         font-family: $fontSpace!important;
+    }
+}
+
+
+@mixin text-MQ-mobile-lg(){
+    body {
+        font-size: 15px!important;
+    }
+}
+
+@mixin text-MQ-desktop-md(){
+    body {
+        font-size: 15px!important;
+    }
+}
+
+@mixin text-MQ-desktop(){
+    body {
+        font-size: 16px!important;
     }
 }

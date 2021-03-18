@@ -1,41 +1,49 @@
-&-hero-button-xl, &-hero-button-md, &-hero-button-sm {
-    outline: none;
-    position: relative;
-    display: block;
-    color: #fff;
-    border: 1px solid transparent;
-    border-radius: 7px;
-    font-weight: 700;
-    transition: $transition-0-2s;
-    background-color: $primary-color;
-    cursor: pointer;
-    &.secondary-color {
-        background-color: $secondary-color;
+.excelsior {
+    &-hero-button-xl, &-hero-button-md, &-hero-button-sm {
+        outline: none;
+        position: relative;
+        display: block;
+        color: #fff;
+        border: 1px solid transparent;
+        border-radius: 7px;
+        font-weight: 700;
+        transition: $transition-0-2s;
+        background-color: $primary-color;
+        text-decoration: none;
+        text-align: center;
+        cursor: pointer;
+        &.secondary-color {
+            background-color: $secondary-color;
+            &:hover {
+                background-color: lighten($color: $secondary-color, $amount: 10%);
+                border: 1px solid lighten($color: $secondary-color, $amount: 27%);
+            }
+            &:active {
+                background-color: darken($color: $secondary-color, $amount: 10%);
+                border: 1px solid $secondary-color;
+            }
+        }
         &:hover {
-            background-color: lighten($color: $secondary-color, $amount: 10%);
-            border: 1px solid lighten($color: $secondary-color, $amount: 27%);
+            background-color: lighten($color: $primary-color, $amount: 10%);
+            border: 1px solid lighten($color: $primary-color, $amount: 27%);
         }
         &:active {
-            background-color: darken($color: $secondary-color, $amount: 10%);
-            border: 1px solid $secondary-color;
+            background-color: darken($color: $primary-color, $amount: 10%);
+            border: 1px solid $primary-color;
         }
     }
-    &:hover {
-        background-color: lighten($color: $primary-color, $amount: 10%);
-        border: 1px solid lighten($color: $primary-color, $amount: 27%);
+    
+    &-hero-button-xl {
+        padding: 14px 20px;
+        font-size: $font-size-md;
     }
-    &:active {
-        background-color: darken($color: $primary-color, $amount: 10%);
-        border: 1px solid $primary-color;
+    &-hero-button-md {
+        width: auto;
+        padding: 10px 40px;
+        font-size: $font-size-md;
     }
 }
 
-&-hero-button-xl {
-    padding: 14px 20px;
-    font-size: $font-size-md;
-}
-&-hero-button-md {
-    width: auto;
-    padding: 10px 40px;
-    font-size: $font-size-md;
+@mixin buttons-MQ-desktop() {
+
 }
