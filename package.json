@@ -11,7 +11,7 @@
     "start": "node index.js",
     "dev": "webpack serve",
     "build": "webpack --mode production --config ./webpack.config.js --progress",
-    "heroku-postbuild": "webpack --config webpack.config.js"
+    "heroku-postbuild": "webpack --config webpack.prod.js"
   },
   "keywords": [
     "webpage",
