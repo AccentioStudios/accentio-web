@@ -35,7 +35,7 @@ app.use(function (req, res, next) {
   next();
 });
 
-const port = process.env.PORT || 4555;
+const port = process.env.PORT || 8080;
 let server = http.createServer(app);
 // switch (process.env.NODE_ENV) {
 //   case 'development':
