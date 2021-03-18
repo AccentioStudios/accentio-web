@@ -1,3 +1,5 @@
 node_modules
-ssl
+ssl/
 public
+localhost.crt
+localhost.key
