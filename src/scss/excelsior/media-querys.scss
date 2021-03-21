@@ -22,14 +22,11 @@
 @media screen and (min-width: $screenDesktop)
               and (max-width: $screenLarge) { 
     @include text-MQ-desktop-md();
-    @include hero-MQ-desktop-md();
+    // @include hero-MQ-desktop-md();
     // @include header-MQ-desktop();
     // @include buttons-MQ-desktop();
 }
 // Large Desktop
 @media screen and (min-width: $screenLarge) { 
-    // @include text-MQ-desktop-md();
-    // @include hero-MQ-desktop-md();
-    // @include header-MQ-desktop();
-    // @include buttons-MQ-desktop();
+    @include misc-MQ-desktop-lg();
 }
