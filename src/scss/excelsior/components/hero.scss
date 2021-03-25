@@ -15,12 +15,10 @@ $padding-hero-feature-desktop:90px;
                 }
             }
             &__item {
-                width: 100%;
                 position: relative;
                 padding: 0px $viewport-padding;
                 max-width: $max-container-width;
                 margin: 0px auto;
-                box-sizing: border-box;
                 &-bg {
                     position: absolute;
                     top: 0px;
@@ -165,22 +163,6 @@ $padding-hero-feature-desktop:90px;
     }
 }
 
-@mixin hero-MQ-desktop-md(){
-    .excelsior {
-        &-hero{
-            &__headline {
-                width: 60%;
-            }
-        }
-        &__content {
-            padding-top: $menu-height-desktop;
-        }
-        &__section {
-            margin-top: -$menu-height-desktop;
-        }
-    }
-}
-
 @mixin hero-MQ-desktop(){
     .excelsior {
         &-hero {
@@ -202,7 +184,6 @@ $padding-hero-feature-desktop:90px;
             }
             &__headline {
                 width: 51%;
-                // margin-top: 12vh;
                 h1 {
                     font-size: $font-size-xl;
                     text-align: left;
@@ -215,3 +196,4 @@ $padding-hero-feature-desktop:90px;
         }
     }
 }
+
