@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <title>Desarrollo de software, web y mobile, UX y entrega continua de resultados | Accentio Studios</title>
-    <link rel="canonical" href="https://accentiostudios.com/" />
+    <meta name="description" content="En Accentio Studios hacemos desarrollo de software, web y mobile, sin burocracia, facil y enfocados en la experiencia del usuario y en busqueda de constante modernizacion." />
+    <meta name="robots" content="index,follow">
     <meta property="og:url" content="https://accentiostudios.com/" />
     <meta property="og:site_name" content="Accentio Studios" />
     <meta property="og:type" content="website" />
     <meta property="og:title" content="Desarrollo de software, web y mobile de alta calidad, enfocado a la experiencia de usuario | Accentio Studios" />
     <meta name="og:description" content="En Accentio Studios hacemos desarrollo de software, web y mobile, sin burocracia, facil y enfocados en la experiencia del usuario y en busqueda de constante modernizacion." />
-    <meta name="description" content="En Accentio Studios hacemos desarrollo de software, web y mobile, sin burocracia, facil y enfocados en la experiencia del usuario y en busqueda de constante modernizacion." />
+    <link rel="canonical" href="https://accentiostudios.com/" />
     <%= require('../partials/head.partials.ejs')() %>
 </head>
 <body class="excelsior-wrapper">
     <%= require('../partials/header.partials.ejs')() %>
+    <main>
     <section class="excelsior-hero__section">
-        <div class="excelsior-hero__background">
-            <img class="hero-image-cover unselectable" src="/img/glow_universe_hero-glow.svg" alt="">
-        </div>
+        <picture class="excelsior-hero__background">
+            <img class="hero-image-cover unselectable" src="./img/glow_universe_hero-glow.svg" alt="Pretty hero image that shows a glow universe in colors">
+        </picture>
         <div class="excelsior-hero__content">
             <div class="excelsior-hero__gradientEdge"></div>
             <div class="excelsior-hero__headline">
@@ -36,13 +37,13 @@
     <section class="excelsior-hero-features margin-top-xl">
         <div class="excelsior-hero-features__item">
             <div class="excelsior-hero-features__item-bg">
-                <img id="hero-feature-rocketlvl1-glow" class="unselectable" src="/img/glow_universe_hero-glow-left.svg" alt="">
+                <img id="hero-feature-rocketlvl1-glow" class="unselectable" src="./img/glow_universe_hero-glow-left.svg" alt="">
             </div>
             <div class="excelsior-hero-features__item-content">
                 <div class="col-group">
-                    <div id="rocketlvl1-feature-image" class="col-4 excelsior-hero-features__image-container">
-                        <img class="feature-image-l" src="/img/rocketlvl1.svg" alt="">
-                    </div>
+                    <figure id="rocketlvl1-feature-image" class="col-4 excelsior-hero-features__image-container">
+                        <img class="feature-image-l" src="./img/rocketlvl1.svg" alt="Rocket-Lvl-1">
+                    </figure>
                     <div class="col-8">
                         <div class="excelsior-hero-features__desc-container margin-top-md">
                             <div class="excelsior-divisor-line"></div>
@@ -57,7 +58,7 @@
         </div>
         <div class="excelsior-hero-features__item">
             <div class="excelsior-hero-features__item-bg">
-                <img id="hero-feature-agentcontroller-glow" class="unselectable" src="/img/glow_universe_hero-glow-right.svg" alt="">
+                <img id="hero-feature-agentcontroller-glow" class="unselectable" src="./img/glow_universe_hero-glow-right.svg" alt="">
             </div>
             <div class="excelsior-hero-features__item-content">
         <div class="col-group prod2-section1">
@@ -70,9 +71,9 @@
                     <p>En Accentio Studios creemos que es importante transmitir acertadamente el mensaje que quieres llevar, asi que no tenemos miedo en desarrollar nuevas estrategias, que permitan de manera efectiva, conectar con tu publico objetivo y ascender tu marca al proximo nivel.</p>
                 </div>
             </div>
-            <div id="agentcontroller-feature-image" class="col-4 excelsior-hero-features__image-container">
-                <img class="feature-image-r" src="/img/agent_controller_img.png" alt="">
-            </div>
+            <figure id="agentcontroller-feature-image" class="col-4 excelsior-hero-features__image-container">
+                <img class="feature-image-r" src="./img/agent_controller_img.png" alt="AgentController-Image">
+            </figure>
         </div>
             </div>
         </div>
@@ -131,15 +132,15 @@
     <div class="col-group prod2-section2">
         <ul class="excelsior-flexible-horizontal-list flex-row-center">
             <li class="excelsior-card nobody padding-xl feature-card">
-                <img class="feature-card__main-img" src="/img/rocketlvl2.svg" alt="rocketlvl2">
+                <img class="feature-card__main-img" src="./img/rocketlvl2.svg" alt="rocketlvl2">
                 <h3 class="text-md text-strong font-primary">Expande aun más <br> tus fronteras</h3>
             </li>
             <li class="excelsior-card nobody padding-xl feature-card">
-                <img class="feature-card__main-img" src="/img/next_objective.svg" alt="mars-next-objective">
+                <img class="feature-card__main-img" src="./img/next_objective.svg" alt="mars-next-objective">
                 <h3 class="text-md text-strong font-primary">Define tu proximo<br>objetivo</h3>
             </li>
             <li class="excelsior-card nobody padding-xl feature-card">
-                <img class="feature-card__main-img" src="/img/mars_colonized.svg" alt="mars-colony">
+                <img class="feature-card__main-img" src="./img/mars_colonized.svg" alt="mars-colony">
                 <h3 class="text-md text-strong font-primary">Llega al siguiente<br>nivel</h3>
             </li>
         </ul>
@@ -147,8 +148,9 @@
     </section>
     <div class="excelsior-hero-image img-xl">
         <div class="excelsior-cut-wave-blue top"></div>
-        <img class="hero-image-cover unselectable" src="/img/mars_colonized_hd.svg" alt="">
+        <img class="hero-image-cover unselectable" src="./img/mars_colonized_hd.svg" alt="">
     </div>
+    </main>
     <%= require('../partials/footer.partials.ejs')() %>
 </body>
 </html>

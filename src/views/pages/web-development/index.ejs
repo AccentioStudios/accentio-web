@@ -17,18 +17,21 @@
 <body class="excelsior-wrapper">
     <%= require('../../partials/header.partials.ejs')() %>
     <section class="excelsior-hero__section">
-        <div class="container excelsior-hero__headline">
-            <h1>
-                <u>Desarrollo web</u> con nuevas tecnologías y alta calidad de la mano de una excelente
-                experiencia de usuario.
-            </h1>
-            <div class="arrow-down"></div>
+        <picture class="excelsior-hero__background">
+            <img class="hero-image-cover unselectable" src="./img/pc_background.jpg" alt="A pretty pc with code example from ours projects">
+        </picture>
+        <div class="excelsior-hero__content">
+            <div class="excelsior-hero__gradientEdge"></div>
+            <div class="excelsior-hero__headline">
+                <h1>
+                    <u>Desarrollo web</u> con nuevas tecnologías y alta calidad de la mano de una excelente
+                    experiencia de usuario.
+                </h1>
+            </div>
+            <div class="read-more-btn">
+                <div class="arrow-down"></div>
+            </div>
         </div>
-        <div class="excelsior-hero__background">
-            <img class="hero-image-cover unselectable" src="/img/pc_background.jpg" alt="">
-        </div>
-        <div class="excelsior-cut-wave-blue"></div>
-    </section>
     <section class="container margin-top-md">
         <div style="max-width: 800px" class="excelsior-card nobody padding-sm margin-auto">
                 <div class="">
@@ -96,7 +99,7 @@
     </section>
     <div class="excelsior-hero-image img-xl">
         <div class="excelsior-cut-wave-blue top"></div>
-        <img class="hero-image-cover unselectable" src="/img/mars_colonized_hd.svg" alt="">
+        <img class="hero-image-cover unselectable" src="./img/mars_colonized_hd.svg" alt="">
     </div>
     <%= require('../../partials/footer.partials.ejs')() %>
 </body>

@@ -54,7 +54,7 @@ module.exports = {
     // path.resolve(__dirname, './src/scss/app.scss')
   },
   output: {
-    path: path.resolve(__dirname, './public'),
+    path: path.resolve(__dirname, './dist'),
     filename: '[name].bundle.js',
   },
   plugins: [

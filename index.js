@@ -22,12 +22,7 @@ app.use(express.urlencoded({
 app.use(helmet()); // Sending various http headers
 app.enable('trust proxy');
 
-app.use(express.static(__dirname + '/public'));
-
-// API VERSION 1
-require('./routes/api/v1/api.v1.routes')(app);
-// WEB ROUTING
-require('./routes/api/v1/api.v1.routes')(app);
+app.use(express.static(__dirname + '/dist'));
 
 app.use(function (req, res, next) {
   res.setHeader(
