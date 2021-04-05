@@ -23,31 +23,31 @@ $screenLarge:   1060px;
 
 // Text sizes fibonacci
 $font-size: 1em;
-$font-size-xxl: calc(4.23 * 1em);
-$font-size-xl: calc(2.617 * 1em);
-$font-size-lg: calc(1.618 * 1em);
-$font-size-md: 1em;
-$font-size-sm: calc(1em / 1.618);
-$font-size-xs: calc(1em / 2.617);
-$font-size-xxs: calc(1em / 4.23);
+$font-size-xxl: calc(4.23 * 1rem);
+$font-size-xl: calc(2.617 * 1rem);
+$font-size-lg: calc(1.618 * 1rem);
+$font-size-md: 1rem;
+$font-size-sm: calc(1rem / 1.618);
+$font-size-xs: calc(1rem / 2.617);
+$font-size-xxs: calc(1rem / 4.23);
 // Letter Spacing:
-$letter-spacing: 0.01em;
+$letter-spacing: 0.01rem;
 
 @mixin h1() {
     font-size: $font-size-xl;
-    line-height: 1.4em;
+    line-height: 3.8rem;
 }
 @mixin h2() {
     font-size: $font-size-lg;
-    line-height: 1.4em;
+    line-height: 2.8rem;
 }
 @mixin h3() {
     font-size: $font-size-md;
-    line-height: 1.4em;
+    line-height: 1.5rem;
 }
 @mixin h4() {
     font-size: $font-size-sm;
-    line-height: 1.4em;
+    line-height: 1.5rem;
 }
 
 
