@@ -65,7 +65,7 @@ module.exports = {
     new CopyWebpackPlugin({
       patterns: [{
         from: path.resolve(__dirname, publicPath),
-        to: "img" 
+        to: "media" 
       }],
     }),
     new CleanWebpackPlugin(),
