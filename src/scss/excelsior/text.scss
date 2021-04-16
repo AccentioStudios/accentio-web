@@ -19,6 +19,10 @@ h4 {
 }
 h1, h2, h3, h4 {
     color: $font-color;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    font-stretch: expanded;
+    transform: scaleY(1.03);
 }
 h1, h2{
     font-family: $fontSpace;
@@ -26,7 +30,8 @@ h1, h2{
 
 // Paragraph
 p {
-    line-height: 2.22rem;
+    line-height: 2.01em;
+    font-size: 1.06em;
 }
 
 // Text Sizes
