@@ -1,9 +1,9 @@
-// Mobile lg
-@media (min-width: $screenTablet) and
-       (max-width: $screenDesktop){
+// Tablet lg
+@media (min-width: $screenTablet) {
     @include misc-MQ-mobile-lg();
     @include text-MQ-mobile-lg();
     @include hero-MQ-mobile-lg();
+    @include footer-MQ-tablet();
     // @include hero-MQ();
 }
 
