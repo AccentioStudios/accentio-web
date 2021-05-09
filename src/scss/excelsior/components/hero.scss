@@ -4,6 +4,17 @@ $padding-hero-feature-desktop:90px;
 
 .excelsior {
     &-hero{
+        &__extraheadline {
+            margin-bottom: 32px;
+        }
+        &__graphic {
+            width: 100%;
+            position: relative;
+            img {
+                margin: auto;
+                width: 100%;
+            }
+        }
         &-features {
             position: relative;
             width: 100%;
@@ -91,6 +102,7 @@ $padding-hero-feature-desktop:90px;
             max-width: $max-container-width;
             margin: 0px auto;
             height: 100%;
+            overflow: hidden;
         }
         &__background {
             position: absolute;
@@ -127,7 +139,7 @@ $padding-hero-feature-desktop:90px;
             display: flex;
             flex-direction: column;
             width: 100%;
-            margin-top: 11vh;
+            margin-top: 8vh;
             z-index: 1;
             h1{
                 font-size: $font-size-lg;
@@ -144,28 +156,34 @@ $padding-hero-feature-desktop:90px;
 }
 
 @mixin hero-MQ-mobile-lg(){
-    .excelsior {
-        &-hero{
-            &-features {
-                &__item-content {
-                    padding-top: $padding-hero-feature-desktop;
-                    padding-bottom: $padding-hero-feature-desktop;
-                }
-                &__image-container {
-                    max-width: 100%;
-                    margin: 14px 0px;
-                    background-color: transparent;
-                    border-radius: initial;
-                    margin-bottom: 0px;
-                }
-            }
-        }
-    }
+    // .excelsior {
+    //     &-hero{
+    //         &__extraheadline {
+    //             display:block;
+    //         }
+    //         &-features {
+    //             &__item-content {
+    //                 padding-top: $padding-hero-feature-desktop;
+    //                 padding-bottom: $padding-hero-feature-desktop;
+    //             }
+    //             &__image-container {
+    //                 max-width: 100%;
+    //                 margin: 14px 0px;
+    //                 background-color: transparent;
+    //                 border-radius: initial;
+    //                 margin-bottom: 0px;
+    //             }
+    //         }
+    //     }
+    // }
 }
 
 @mixin hero-MQ-desktop(){
     .excelsior {
         &-hero {
+            &__extraheadline {
+                display:block;
+            }
             &-features {
                 &__item-content {
                     padding-top: $padding-hero-feature-desktop;
@@ -178,12 +196,26 @@ $padding-hero-feature-desktop:90px;
             }
             &__content {
                 padding-top: $menu-height-desktop;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-between;
             }
             &__section {
                 margin-top: -$menu-height-desktop;
             }
+            &__graphic {
+                flex: 50%;
+                margin-top: 40px;
+                img {
+                    width: 100%;
+                    margin: auto;
+                }
+            }
             &__headline {
-                width: 51%;
+                padding-right: 90px;
+                flex: 50%;
+                margin-top: 11vh;
                 h1 {
                     font-size: $font-size-xl;
                     text-align: left;
