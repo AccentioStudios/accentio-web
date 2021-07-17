@@ -157,5 +157,6 @@ module.exports = {
     minimize: !isDevelopment ? false : true,
     minimizer: [new TerserPlugin()],
 },
-devtool: 'cheap-module-source-map'
+devtool: 'cheap-module-source-map',
+watch: true
 }
