@@ -14,25 +14,30 @@
 <script type="application/ld+json">
   {
     "@context": "https://schema.org",
+    "@type":"Organization",
     "@id": "https://accentiostudios.com/#organization",
-    "@type": "Organization",
-    "name": "Accentio Studios",
-    "url": "https://accentiostudios.com",
-    "logo": "https://accentiostudios.com/media/logos/sm_darkblue_rounded.png",
-    "subOrganization":{
-      "@id":"https://blog.accentiostudios.com/#organization"
-      "@type":"Website",
-      "name":"Accentio Blog",
-      "url":"https://blog.accentiostudios.com",
+    "url":"https://accentiostudios.com",
+    "name":"Accentio Studios",
+    "description":"Desarrollo de software, web y mobile de alta calidad, enfocado a la experiencia de usuario.",
+    "logo":{
+       "@type":"ImageObject",
+       "@id": "https://accentiostudios.com/#logo",
+       "url":"https://accentiostudios.com/media/logos/sm_darkblue_rounded.png"
     },
-    "sameAs":[
-      "https://www.facebook.com/AccentioStudios/",
-      "https://www.instagram.com/AccentioStudios/",
-      "https://www.linkedin.com/company/AccentioStudios",
-      "https://twitter.com/AccentioStudios"
-    ],
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Sao Paulo",
+      "addressRegion": "SP",
+      "addressCountry": "BR"
+    },
+    "subOrganization": {
+      "@id": "https://blog.accentiostudios.com/#organization",
+      "@type": "Organization",
+      "name": "Accentio Blog",
+      "url": "https://blog.accentiostudios.com"
+    }
   }
-  </script>
+</script>
 
 
 <link rel="apple-touch-icon" sizes="180x180" href="./media/favicon/apple-touch-icon.png">
