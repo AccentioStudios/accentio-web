@@ -9,7 +9,8 @@ const CopyWebpackPlugin = require('copy-webpack-plugin');
 
 var appBasePath = './src';
 var viewsPagesPath = `${appBasePath}/views/pages`;
-var publicPath = `${appBasePath}/media`;
+var mediaPath = `${appBasePath}/media`;
+var publicPath = `${appBasePath}/public`;
 
 let HWPConfig = new HtmlWebpackPlugin({
   template: 'src/views/pages/index.ejs',
@@ -64,8 +65,14 @@ module.exports = {
     }),
     new CopyWebpackPlugin({
       patterns: [{
-        from: path.resolve(__dirname, publicPath),
+        from: path.resolve(__dirname, mediaPath),
         to: "media" 
+      }],
+    }),
+    new CopyWebpackPlugin({
+      patterns: [{
+        from: path.resolve(__dirname, publicPath),
+        to: "/" 
       }],
     }),
     new CleanWebpackPlugin(),
@@ -83,7 +90,7 @@ module.exports = {
         test: /\.(png|jpe?g|gif|svg)$/i,
         loader: 'file-loader',
         options: {
-          publicPath: 'media',
+          mediaPath: 'media',
           outputPath: 'media',
           name: '[name].[ext]',
         },
